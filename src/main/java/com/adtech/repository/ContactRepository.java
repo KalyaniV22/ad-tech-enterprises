@@ -3,9 +3,9 @@ package com.adtech.repository;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.adtech.entity.Contact;
+import com.adtech.dto.ContactDto;
 
 @Repository
-public interface ContactRepository extends JpaRepository<Contact, Long> {
+public interface ContactRepository extends JpaRepository<ContactDto, Long> {
 
 }
