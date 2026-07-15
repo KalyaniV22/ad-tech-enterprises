@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project is a responsive company website developed for **AD Tech Enterprises Pvt. Ltd.** It provides information about the company and its services, along with a Contact Us form where users can submit their details. The submitted data is stored in a MySQL database using a Spring Boot REST API.
+This project is a responsive company website developed for **AD Tech Enterprises Pvt. Ltd.** It provides information about the company and its services through a modern user interface. Users can submit their queries using the Contact Us form. The frontend communicates with a Spring Boot REST API, and the submitted data is stored in a MySQL database.
 
 ---
 
@@ -12,7 +12,8 @@ This project is a responsive company website developed for **AD Tech Enterprises
 - Home, About, Services and Contact Sections
 - Contact Form
 - REST API Integration
-- Data Stored in MySQL Database
+- MySQL Database Integration
+- Swagger API Documentation
 - Clean and User-Friendly Interface
 
 ---
@@ -28,9 +29,13 @@ This project is a responsive company website developed for **AD Tech Enterprises
 - Java
 - Spring Boot
 - Spring Data JPA
+- Spring Web
 
 ### Database
-- MySQL
+- MySQL (Railway)
+
+### API Documentation
+- Swagger OpenAPI
 
 ### Tools
 - Spring Tool Suite (STS)
@@ -46,6 +51,10 @@ This project is a responsive company website developed for **AD Tech Enterprises
 ```
 ad-tech-enterprises
 │
+├── index.html
+├── style.css
+├── script.js
+│
 ├── src
 │   └── main
 │       ├── java
@@ -57,11 +66,6 @@ ad-tech-enterprises
 │       │       └── config
 │       │
 │       └── resources
-│           ├── static
-│           │   ├── index.html
-│           │   ├── style.css
-│           │   └── script.js
-│           │
 │           └── application.properties
 │
 ├── pom.xml
@@ -91,7 +95,7 @@ ad-tech-enterprises
 }
 ```
 
-### Response
+### Successful Response
 
 ```json
 {
@@ -105,27 +109,68 @@ ad-tech-enterprises
 
 ---
 
-## How to Run the Project
+## API Documentation
 
-1. Clone the repository.
-2. Open the project in Spring Tool Suite (STS).
-3. Configure MySQL in `application.properties`.
-4. Create the database.
-5. Run the Spring Boot application.
-6. Open:
+Swagger UI
 
 ```
-http://localhost:8085/index.html
+https://ad-tech-enterprises-2.onrender.com/swagger-ui/index.html
 ```
 
 ---
 
 ## Deployment
 
-- Backend: Render
-- Frontend: Vercel
+### Frontend
+- Vercel
+
+### Backend
+- Render
+
+### Database
+- Railway MySQL
 
 ---
 
+## How to Run the Project
 
+1. Clone the repository.
+
+```bash
+git clone <repository-url>
+```
+
+2. Open the project in Spring Tool Suite (STS).
+
+3. Configure MySQL database credentials in `application.properties`.
+
+4. Run the Spring Boot application.
+
+5. Open the frontend or deploy it to Vercel.
+
+6. Test the backend APIs using Swagger UI or Postman.
+
+---
+
+## Live Project
+
+### Frontend (Vercel)
+
+```
+https://ad-tech-frontend-dt9c.vercel.app/
+```
+
+### Backend (Render)
+
+```
+https://ad-tech-enterprises-2.onrender.com/
+```
+
+### Swagger UI
+
+```
+https://ad-tech-enterprises-2.onrender.com/swagger-ui/index.html
+```
+
+---
 
